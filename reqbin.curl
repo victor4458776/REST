@@ -1,0 +1,24 @@
+$ curl -d 'pattern=^/auth&to=https://myserver.com/api' http://localhost:4578/redirects
+
+$ git clone git://github.com/artemave/REST-assured.git
+$ cd rest-assured && bundle install
+$ bundle exec rspec spec
+$ bundle exec cucumber
+
+curl https://reqbin.com/echo
+curl https://reqbin.com/echo
+
+curl -X POST https://reqbin.com/echo/post/form
+   -H "Content-Type: application/x-www-form-urlencoded" 
+   -d "param1=value1&param2=value2"
+
+  #Practical => curl [URL] -d "key1=value1&key2=value2"
+
+curl https://api.reqbin.com/api/v1/requests
+   -X OPTIONS 
+   -H "Access-Control-Request-Method: POST"
+   -H "Access-Control-Request-Headers: content-type"
+   -H "Origin: https://reqbin.com
+
+
+
