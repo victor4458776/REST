@@ -38,6 +38,19 @@ Content-Length: 80
       
 [patch request data]
 
+POST /echo/post/json HTTP/1.1
+Host: reqbin.com
+Accept: application/json
+Authorization: Basic e3VzZXJuYW1lfTp7cGFzc3dvcmR9
+Content-Type: application/json
+Content-Length: 61
+
+{
+	"employee":{ "name":"Emma", "age":28, "city":"Boston" }
+} 
+
+
+
 
 
 
