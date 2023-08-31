@@ -34,4 +34,5 @@ JSON.parse(req.rack_env)['HTTP_ACCEPT'].should == 'text/html'
     $ curl http://localhost:4578/api/something?param=foo
     awesome
 
+git commit -m "QTA-7 <message>"
 
