@@ -1,0 +1,4 @@
+Client-server: the REST API client user interface (website, desktop or mobile application) should be decoupled from the REST API server (request processor and data storage) so that each part can be developed and scaled individually.
+Stateless: Every REST API request must be executed with all the necessary data, without assuming that the server might have any data from previous REST API client requests.
+Layered: the REST API client does not need to know if it communicates with an actual server or an intermediary. Intermediate servers (proxies or load balancers) can provide the underlying REST API server with additional scalability and security.
+Cacheable: each REST API response must be defined as cacheable or not.
