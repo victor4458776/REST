@@ -1,3 +1,7 @@
+GET /echo/get/json HTTP/1.1
+Host: reqbin.com
+Accept: application/json
+
 POST /echo/post/json HTTP/1.1
 Host: reqbin.com
 Accept: application/json
@@ -10,5 +14,30 @@ Content-Length: 81
   "Quantity": 1,
   "Price": 18.00
 }
+
+GET /echo/get/json HTTP/1.1
+Host: reqbin.com
+Accept: application/json
+
+PATCH /echo/patch/json HTTP/1.1
+Host: reqbin.com
+Accept: application/json
+Content-Type: application/json
+Content-Length: 61
+
+{
+  "User": {
+    "Id": 12345,
+    "Name": "John Smith"
+  }
+}
+
+PATCH /echo/patch HTTP/1.1
+Host: reqbin.com
+Content-Length: 80
+      
+[patch request data]
+
+
 
 
